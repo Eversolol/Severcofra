@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Severcofra : Le Savoir Faire</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="image/x-icon" href="./Images/severcofra_s.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!---NAVBAR-->
+    <header
+      style="
+        background-color: #132e40;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 900;
+      "
+    >
+      <div class="container" style="padding: 0">
+        <div class="d-flex flex-row">
+          <div class="d-flex">
+            <img
+              class="logo-img d-flex"
+              src="./Images/severcofra_s.png"
+              alt="logo severcofra navbar"
+            />
+          </div>
+          <div class="d-flex flex-grow-1 justify-content-end">
+            <ul class="header">
+              <li class="heder-items">
+                <a href="#accueil">Accueil</a>
+              </li>
+              <li class="heder-items"><a href="#Services">Services</a></li>
+              <li class="heder-items">
+                <a href="#realisations">Réalisations</a>
+              </li>
+              <li class="heder-items">
+                <a href="#About">Qui sommes-nous ?</a>
+              </li>
+              <li class="heder-items"><a href="./galerie.html">Galerie</a></li>
+              <li class="heder-items"><a href="./contact.html">Contact</a></li>
+              <li class="menu-btn" onclick="showSidebar()">
+                <a href="javascript:void(0);">
+                  <svg
+                    id="Menu--Streamline-Carbon.svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="-0.5 -0.5 16 16"
+                    height="26"
+                    width="26"
+                    fill="#fff"
+                  >
+                    <desc>Menu Streamline Icon: https://streamlinehq.com</desc>
+                    <defs></defs>
+                    <title>menu</title>
+                    <path
+                      d="M1.875 2.8125h11.25v0.9375H1.875Z"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      d="M1.875 11.25h11.25v0.9375H1.875Z"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      d="M1.875 5.625h11.25v0.9375H1.875Z"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      d="M1.875 8.4375h11.25v0.9375H1.875Z"
+                      stroke-width="1"
+                    ></path>
+                    <path
+                      id="_Transparent_Rectangle_"
+                      d="M0 0h15v15H0Z"
+                      fill="none"
+                      stroke-width="1"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <ul class="header">
+        <li>
+          <a href="#accueil">Accueil</a>
+        </li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#About">Qui sommes-nous ?</a></li>
+        <li><a href="./galerie.html">Galerie</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li class="close-btn" onclick="closeSidebar()">
+          <span>
+            <svg
+              id="Close--Streamline-Carbon.svg"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="-0.5 -0.5 16 16"
+              height="26"
+              width="26"
+              fill="#fff"
+            >
+              <path
+                d="M8.162859375 7.5 11.25 4.412859375 10.587140625 3.75 7.5 6.837140625 4.4129531250000005 3.75 3.75 4.412859375 6.837140625 7.5 3.75 10.587140625 4.4129531250000005 11.25 7.5 8.162859375 10.587140625 11.25 11.25 10.587140625 8.162859375 7.5z"
+                stroke-width="1"
+              ></path>
+            </svg>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!---NAVBAR END-->
+
+    <!---Section 'SEVERCOFRA' big-->
+    <div id="accueil" class="container my-5">
+      <div
+        class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+      >
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold intro">SEVERCOFRA</h1>
+          <p class="display-6 savoir">LE SAVOIR FAIRE</p>
+          <br />
+          <p style="font-size: 20px">
+            Bienvenue chez SEVERCOFRA, votre partenaire de confiance pour tous
+            vos projets de construction, rénovation et aménagement intérieur en
+            Belgique. Avec notre expertise et notre engagement envers
+            l'excellence, nous transformons vos idées en réalité. Explorez nos
+            services et contactez-nous pour concrétiser votre vision dès
+            aujourd'hui.
+          </p>
+        </div>
+
+        <div class="col-lg-5 p-0 overflow-hidden shadow-lg">
+          <img src="./Photos/IMG_0881.jpeg" alt="logo severcofra" width="720" />
+        </div>
+      </div>
+    </div>
+
+    <!--NOS SERVICES SECTION-->
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 id="Services" class="border-bottom">NOS SERVICES</h2>
+
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 py-5"
+      >
+        <div class="col d-flex align-items-start">
+          <img
+            class="small-images"
+            src="./Images/engineering.png"
+            alt="rénovation complète"
+          />
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Rénovation complète</h3>
+            <p>
+              Nous transformons entièrement votre espace pour le moderniser et
+              l'adapter à vos besoins.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img
+            class="small-images"
+            src="./Images/solar-panel.png"
+            alt="chassis velux"
+          />
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Châssis/Velux</h3>
+            <p>
+              Nous améliorons l'efficacité énergétique de votre espace en
+              installant des châssis et des Velux offrant une meilleure
+              isolation et plus de luminosité naturelle.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img
+            class="small-images"
+            src="./Images/house.png"
+            alt="chassis velux"
+          />
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Isolation</h3>
+            <p>
+              Nous améliorons l'efficacité énergétique de votre espace en
+              réduisant les pertes de chaleur et en maintenant une température
+              confortable.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img
+            class="small-images"
+            src="./Images/tile.png"
+            alt="chassis velux"
+          />
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Pose de sols</h3>
+            <p>
+              Nous transformons l'aspect et la fonctionnalité de votre espace en
+              installant de nouveaux revêtements adaptés à vos besoins et à
+              votre style.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img
+            class="small-images"
+            src="./Images/tools.png"
+            alt="chassis velux"
+          />
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Menuiserie</h3>
+            <p>
+              Nous modernisons votre espace en installant de nouvelles portes,
+              fenêtres et autres éléments sur mesure, améliorant ainsi son
+              esthétique et sa fonctionnalité.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img
+            class="small-images"
+            src="./Images/wardrobe.png"
+            alt="chassis velux"
+          />
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Placards sur mesure</h3>
+            <p>
+              Nous créons des placards sur mesure pour optimiser le rangement et
+              maximiser l'utilisation de l'espace dans votre intérieur.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img
+            class="small-images"
+            src="./Images/attic.png"
+            alt="chassis velux"
+          />
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 services">Aménagement de grenier</h3>
+            <p>
+              Nous transformons votre grenier en un espace fonctionnel et
+              confortable, ajoutant de la valeur à votre maison tout en
+              répondant à vos besoins spécifiques.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <img
+            class="small-images"
+            src="./Images/wall.png"
+            alt="chassis velux"
+          />
+          <div>
+            <h3 class="fw-bold mb-0 fs-4">Pose de cloisons/faux plafonds</h3>
+            <p>
+              Nous installons des cloisons et des faux plafonds pour diviser
+              l'espace et améliorer l'isolation acoustique, créant ainsi un
+              environnement plus fonctionnel et esthétique.
+            </p>
+          </div>
+        </div>
+
+        <!--SHOW MORE 'Nos Services'-->
+        <div id="show-more">
+          <div class="" id="icon-grid">
+            <div
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4"
+            >
+              <div class="col d-flex align-items-start">
+                <img
+                  class="small-images"
+                  src="./Images/paint-roller.png"
+                  alt="rénovation complète"
+                />
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Peinture</h3>
+                  <p>
+                    Nous donnons une nouvelle vie à vos murs avec notre service
+                    de peinture professionnelle, pour créer l'atmosphère que
+                    vous désirez dans votre espace.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img
+                  class="small-images"
+                  src="./Images/electric.png"
+                  alt="rénovation complète"
+                />
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Electricité</h3>
+                  <p>
+                    Nous assurons l'installation et la rénovation électrique
+                    pour garantir la sécurité et le bon fonctionnement de votre
+                    système électrique.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img
+                  class="small-images"
+                  src="./Images/house-heat.png"
+                  alt="rénovation complète"
+                />
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Chauffage</h3>
+                  <p>
+                    Nous proposons des solutions de chauffage adaptées à vos
+                    besoins pour un confort optimal tout au long de l'année.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img
+                  class="small-images"
+                  src="./Images/pipeline.png"
+                  alt="rénovation complète"
+                />
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Plomberie</h3>
+                  <p>
+                    Nous assurons l'installation et la réparation de systèmes de
+                    plomberie pour garantir un fonctionnement efficace de vos
+                    équipements.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img
+                  class="small-images"
+                  src="./Images/kitchen.png"
+                  alt="rénovation complète"
+                />
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Cuisine</h3>
+                  <p>
+                    Nous concevons et installons des cuisines sur mesure,
+                    alliant fonctionnalité et esthétique pour répondre à vos
+                    besoins spécifiques.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img
+                  class="small-images"
+                  src="./Images/bath.png"
+                  alt="rénovation complète"
+                />
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Salle de bain</h3>
+                  <p>
+                    Nous transformons votre salle de bain en un sanctuaire de
+                    bien-être, en combinant design élégant et fonctionnalité
+                    pour créer un espace de détente luxueux dans votre maison.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img
+                  class="small-images"
+                  src="./Images/garage.png"
+                  alt="rénovation complète"
+                />
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Transformation de garage</h3>
+                  <p>
+                    Nous convertissons votre garage en un espace polyvalent,
+                    ajoutant de la valeur à votre maison tout en répondant à vos
+                    besoins, que ce soit pour un bureau, une salle de jeux ou
+                    une extension de vie.
+                  </p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img
+                  class="small-images"
+                  src="./Images/plastering.png"
+                  alt="rénovation complète"
+                />
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4">Plafonnage</h3>
+                  <p>
+                    Nous assurons un plafonnage de qualité, offrant des
+                    finitions lisses et parfaites pour vos murs et plafonds,
+                    créant ainsi une base solide pour la décoration de votre
+                    espace.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---START SERVICES PRO-->
+        <div id="services-pro" class="">
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4"
+          >
+            <div class="col d-flex align-items-center">
+              <img class="small-images" src="./Images/form.png" alt="" />
+              <div>
+                <h3 class="fw-bold mb-0 fs-4">Coffrage</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img
+                class="small-images"
+                src="./Images/bricklayer.png"
+                alt="Maconnerie"
+              />
+              <div>
+                <h3 class="fw-bold mb-0 fs-4">Maconnerie</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img
+                class="small-images"
+                src="./Images/concrete-mixer.png"
+                alt="Maconnerie"
+              />
+              <div>
+                <h3 class="fw-bold mb-0 fs-4">Betonage</h3>
+              </div>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img
+                class="small-images"
+                src="./Images/concrete.png"
+                alt="Maconnerie"
+              />
+              <div>
+                <h3 class="fw-bold mb-0 fs-4">Feraillage</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---END SERVICES PRO-->
+      </div>
+      <!--Button 'show-more'-->
+      <div class="container btn-div gap-2">
+        <button onclick="toggleCard()" id="cardButton" class="button1 btn">
+          Voir plus
+          <img src="./Images/plus.png" alt="voir plus" class="btn-img" />
+        </button>
+        <button
+          onclick="toggleCardPro()"
+          id="proCardButton"
+          class="button2 btn"
+        >
+          Services professionels<img
+            src="./Images/plus.png"
+            alt="voir plus pro services"
+            class="btn-img"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!---NOS CHANTIERS PHARES 'Carousel'-->
+    <div id="realisations" class="container py-5">
+      <h2 class="border-bottom">NOS RÉALISATIONS</h2>
+      <div class="container mt-2 py-2" style="font-size: 20px; padding: 0">
+        <p>
+          Nous sommes fiers de nos nombreux projets réussis qui témoignent de
+          notre savoir-faire et de notre engagement envers l'excellence. Que ce
+          soit pour des constructions neuves, des rénovations ou des projets de
+          grande envergure, Severcofra est le partenaire de choix pour
+          transformer vos visions en réalité.
+        </p>
+      </div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="7"
+            aria-label="Slide 8"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="8"
+            aria-label="Slide 9"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="overlay-image"
+              style="background-image: url(./Chantiers/Lokeren.jpeg)"
+            ></div>
+            <div class="container carousel-container">
+              <h4 class="fw-bold">Lokeren</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="overlay-image"
+              style="background-image: url(./Chantiers/lokeren1.jpeg)"
+            ></div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="overlay-image"
+              style="background-image: url(./Chantiers/chantier.jpeg)"
+            ></div>
+            <!-- <div class="container carousel-container">
+              <h2>Chantier 2</h2>
+              <p>
+                Paragraph of text beneath the heading to explain the heading.
+              </p>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <div
+              class="overlay-image"
+              style="background-image: url(./Chantiers/beton-cofre.jpeg)"
+            ></div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="overlay-image"
+              style="background-image: url(./Chantiers/feraillage.jpeg)"
+            ></div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="overlay-image"
+              style="
+                background-image: url(./Chantiers/WhatsApp\ Image\ 2024-08-23\ at\ 22.17.43.jpeg);
+              "
+            ></div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="overlay-image"
+              style="
+                background-image: url(./Chantiers/Woluwe-Saint-Lambert.jpeg);
+              "
+            ></div>
+            <div class="container carousel-container">
+              <h4 class="fw-bold">Woluwe-Saint-Lambert</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="overlay-image"
+              style="
+                background-image: url(./Chantiers/Woluwe-Saint-Lambert1.jpeg);
+              "
+            ></div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="overlay-image"
+              style="
+                background-image: url(./Chantiers/Woluwe-Saint-Lambert2.jpeg);
+              "
+            ></div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!---Section 'Qui Sommes Nous'-->
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 id="About" class="border-bottom">QUI SOMMES-NOUS ?</h2>
+
+      <!---Photos 'Qui sommes nous'-->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-1">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              class="rounded-top-1"
+              src="./Photos/Equipe/equipe.jpeg"
+              alt=""
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <span class="fw-bold">Une équipe soudée et compétente.</span
+                ><br />
+                Un collectif uni par la passion du travail bien fait, où chaque
+                membre apporte son expertise pour mener vos projets à bien avec
+                excellence et efficacité.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              class="rounded-top-1"
+              src="./Photos/shaking-hands.jpeg"
+              alt=""
+            />
+            <div class="card-body">
+              <p class="card-text">
+                <span class="fw-bold"
+                  >Votre allié de confiance pour des projets réussis.</span
+                ><br />
+                Expertise, engagement et qualité au service de vos ambitions,
+                pour des constructions durables et des collaborations
+                fructueuses.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="rounded-top-1" src="./Photos/IMG_1012.jpeg" alt="" />
+            <div class="card-body">
+              <p class="card-text">
+                <span class="fw-bold"
+                  >Engagés pour une construction durable et économe en
+                  énergie.</span
+                ><br />
+                Notre entreprise se distingue par son engagement envers la
+                durabilité et l'efficacité énergétique dans la construction
+                résidentielle et commerciale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---ILS NOUS FONT CONFIANCE-->
+    <div class="container p-4 mb-5">
+      <h2 class="border-bottom mb-5">Ils nous font confiance</h2>
+      <div id="brands" class="row">
+        <div class="col align-items-center">
+          <img src="./Images-brands/eloy.png" alt="eloy" height="80" />
+        </div>
+        <div class="col">
+          <img src="./Images-brands/herpain.png" alt="eloy" height="80" />
+        </div>
+        <div class="col">
+          <img src="./Images-brands/bam-galere.png" alt="" height="80" />
+        </div>
+        <div class="col">
+          <img
+            src="./Images-brands/louis-de-waele.png"
+            alt="eloy"
+            height="80"
+          />
+        </div>
+        <div class="col">
+          <img src="./Images-brands/cit.png" alt="eloy" height="70" />
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div class="col-lg-3 col-sm-12">
+            <img src="./Images-brands/eloy.png" alt="eloy" height="30">
+          </div> -->
+      </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center">
+      <div class="footer-content d-flex justify-content-between p-3 fw-bold">
+        <span>© 2024 DigitalLife - All rights reserved.</span>
+        <span class="footer-link-text"
+          >Code and design :
+          <a href="https://www.linkedin.com/in/raul-toderean-5279912a8/"
+            >Raul Toderean</a
+          ></span
+        >
+      </div>
+    </footer>
+
+    <!----->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+  </body>
+</html>
