@@ -290,3 +290,34 @@ h2 {
   color: inherit; /* Removes the link color */
   text-decoration: none; /* Removes the underline */
 }
+
+footer a:hover {
+  color: #c0392b;
+}
+
+/* Style for the icons */
+.contact-icon {
+  color: #1d90b9;
+  font-size: 1.25rem;
+}
+
+/* Style for the links */
+.footer-link {
+  color: #1d90b9;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* Hover effect for icons and links */
+.footer-link:hover,
+.contact-icon:hover {
+  font-weight: 600; /* Bolder font on hover */
+  color: #1d90b9;
+}
+
+/* Optional CSS for additional styling */
+.map-container {
+  width: 100%; /* Ensures the container takes the full width of the parent */
+  max-width: 100%; /* Optional: Ensures it doesn't exceed the parent width */
+  height: auto; /* Optional: Maintains aspect ratio if needed */
+}
