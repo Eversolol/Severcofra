@@ -1,7 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-
 .header {
   display: flex;
   flex-flow: row wrap;
@@ -13,76 +12,54 @@ body {
   list-style: none;
   font-weight: bolder;
 }
-
 header a {
   scroll-behavior: smooth;
 }
-
-/* Navbar Logo */
 .logo-img {
   width: 50px;
   height: 50px;
   margin: 5px 10px;
   border-radius: 12px;
 }
-
 .header a {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+  color: #fff;
   transition: 0.5s ease;
 }
-
 .header a:hover {
   color: #1d90b9;
   transition: 0.5s ease;
 }
-
-/* @media all and (max-width: 800px) {
-  .header {
-    justify-content: space-around;
-  }
-} */
-
 h1,
 h3 {
   color: #132e40;
 }
-
 .intro {
   letter-spacing: 5px;
 }
-
 .intro-contact {
   background: -webkit-linear-gradient(white, #1d90b9);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #fff0;
 }
-
 h2 {
   color: #1d90b9;
 }
-
-/* 'LE SAVOIR FAIRE' */
 .savoir {
   color: #1d90b9;
   font-weight: 400;
 }
-
-/* Icons next to the text */
 .small-images {
   margin-right: 10px;
   height: 50px;
   width: 50px;
 }
-
-/* SHOW MORE 'Nos Services' */
 #show-more {
   width: 100%;
   display: none;
 }
-
 #services-pro {
   padding: 1em;
   width: 100%;
@@ -90,73 +67,60 @@ h2 {
   align-items: center;
   padding: 0 auto;
 }
-
 .services {
   max-width: 12ch;
 }
-
-/* SHOW MORE 'Button' */
 .button1 {
   display: flex;
   border-radius: 24px;
   width: auto;
   height: auto;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
-    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-shadow: rgb(0 0 0 / 0.2) 0 3px 5px -1px, rgb(0 0 0 / 0.14) 0 6px 10px 0,
+    rgb(0 0 0 / 0.12) 0 1px 18px 0;
   color: #1d90b9 !important;
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .button1:hover {
   background-color: #1d90b9;
   color: #fff;
 }
-
 .button2 {
   display: flex;
   border-radius: 24px;
   width: auto;
   height: auto;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
-    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-shadow: rgb(0 0 0 / 0.2) 0 3px 5px -1px, rgb(0 0 0 / 0.14) 0 6px 10px 0,
+    rgb(0 0 0 / 0.12) 0 1px 18px 0;
   color: #1d90b9;
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .button2:hover {
   background-color: #1d90b9;
   color: #fff;
 }
-
 .btn-img {
   padding-left: 10px;
 }
-
 .btn-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-/*CAROUSEL*/
-
 #myCarousel {
-  color: white;
+  color: #fff;
 }
-
 .carousel-item {
   height: 40rem;
   background-color: #000;
-  color: white;
+  color: #fff;
   position: relative;
 }
-
 .carousel-container {
   position: absolute;
   bottom: 0;
@@ -167,11 +131,9 @@ h2 {
   padding-bottom: 50px;
   text-align: center;
 }
-
 .carousel-container > h2 {
-  color: white;
+  color: #fff;
 }
-
 .overlay-image {
   position: absolute;
   bottom: 0;
@@ -182,31 +144,23 @@ h2 {
   background-size: cover;
   opacity: 0.85;
 }
-
-/*ILS NOUS FONT CONFIANCE*/
 #brands {
   text-align: center;
 }
-
-/*Footer Section */
 .footer {
-  color: black;
+  color: #000;
 }
-
 .footer-h2 {
   color: #1d90b9;
 }
-
 .contact-text {
   margin: 0;
   padding: 0;
 }
-
 .contact-info {
   text-align: right;
   font-weight: bolder;
 }
-
 .footer-link:link {
   color: #1d90b9;
 }
@@ -214,42 +168,33 @@ h2 {
   color: #132e40;
   font-weight: bolder;
 }
-
-/* SIDEBAR */
-
 .sidebar {
   position: fixed;
   top: 0;
-  right: -250px; /* Hide sidebar offscreen */
+  right: -250px;
   width: 250px;
   height: 100%;
   background-color: #132e40;
-  transition: right 0.3s ease; /* Smooth transition for both open and close */
+  transition: right 0.3s ease;
   z-index: 1000;
   display: flex;
   align-items: start;
 }
-
 .sidebar.show {
-  right: 0; /* Slide in sidebar */
+  right: 0;
 }
-
-/* MENU BTN SHOW */
 .menu-btn {
   display: none;
 }
-
 @media all and (max-width: 992px) {
   .sidebar {
     padding-top: 10px;
   }
-
   .header {
     display: flex;
     flex-direction: column;
     align-items: start;
   }
-
   .heder-items {
     display: none;
   }
@@ -257,67 +202,50 @@ h2 {
     display: flex;
   }
 }
-
 .close-btn {
   position: absolute;
   top: 20px;
   right: 25px;
 }
-
 .close-btn:hover {
   background-color: #1d90b9;
 }
-
-/* GALLERY PHOTOS */
-
 .photo-gallery .photos {
   padding-bottom: 20px;
 }
-
 .photo-gallery .item {
   padding-bottom: 30px;
 }
-
 .footer-content {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgb(0 0 0 / 0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.875rem;
 }
-
 .footer-link-text a {
-  color: inherit; /* Removes the link color */
-  text-decoration: none; /* Removes the underline */
+  color: inherit;
+  text-decoration: none;
 }
-
 footer a:hover {
   color: #c0392b;
 }
-
-/* Style for the icons */
 .contact-icon {
   color: #1d90b9;
   font-size: 1.25rem;
 }
-
-/* Style for the links */
 .footer-link {
   color: #1d90b9;
   text-decoration: none;
   font-weight: 400;
 }
-
-/* Hover effect for icons and links */
 .footer-link:hover,
 .contact-icon:hover {
-  font-weight: 600; /* Bolder font on hover */
+  font-weight: 600;
   color: #1d90b9;
 }
-
-/* Optional CSS for additional styling */
 .map-container {
-  width: 100%; /* Ensures the container takes the full width of the parent */
-  max-width: 100%; /* Optional: Ensures it doesn't exceed the parent width */
-  height: auto; /* Optional: Maintains aspect ratio if needed */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
